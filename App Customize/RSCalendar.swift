@@ -73,6 +73,6 @@ struct RSCalendar: View {
 
 struct RSCalendar_Previews: PreviewProvider {
     static var previews: some View {
-        RSCalendar().environmentObject(UserData())
+        RSCalendar().environmentObject(UserData.default)
     }
 }

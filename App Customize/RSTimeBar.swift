@@ -74,6 +74,6 @@ struct RSTimeBar: View {
 
 struct RSTimeBar_Previews: PreviewProvider {
     static var previews: some View {
-        RSTimeBar().environmentObject(UserData())
+        RSTimeBar().environmentObject(UserData.default)
     }
 }

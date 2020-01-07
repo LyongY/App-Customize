@@ -69,7 +69,7 @@ struct RSFileSection: View {
 
 struct RSFileItem_Previews: PreviewProvider {
     static var previews: some View {
-        RSFileItem(date: "2020-01-02", time: "09:07:33", detail: "Channel01-Demo1").environmentObject(UserData())
+        RSFileItem(date: "2020-01-02", time: "09:07:33", detail: "Channel01-Demo1").environmentObject(UserData.default)
     }
 }
 
@@ -79,7 +79,7 @@ struct RSFileSection_Previews: PreviewProvider {
             .init(date: "2020-01-02", time: "09:07:33", detail: "Channel01-Demo1"),
             .init(date: "2020-01-02", time: "09:08:39", detail: "Channel02-Demo1"),
             .init(date: "2020-01-02", time: "19:08:39", detail: "Channel03-Demo2")
-        ]).environmentObject(UserData())
+        ]).environmentObject(UserData.default)
     }
 }
 

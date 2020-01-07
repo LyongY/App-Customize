@@ -55,6 +55,6 @@ struct RSMenu: View {
 
 struct RSMenu_Previews: PreviewProvider {
     static var previews: some View {
-        RSMenu().environmentObject(UserData())
+        RSMenu().environmentObject(UserData.default)
     }
 }

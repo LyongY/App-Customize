@@ -17,6 +17,8 @@ struct RSCustomColor {
     var splite = Splite()
     
     static let `default`: RSCustomColor = RSCustomColor()
+    
+    private init() { }
 }
 
 extension RSCustomColor {

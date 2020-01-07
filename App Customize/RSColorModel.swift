@@ -80,9 +80,7 @@ class RSColorModel: ObservableObject {
 
     
     var r: Double = 0
-    
-//    static let `default` = RSColorModel()
-    
+        
     init(color: UIColor) {
         self.color = color
         red = ""

@@ -18,7 +18,9 @@ class UserData: NSObject, ObservableObject {
         }
     }
     
-    override init() {
+    static let `default` = UserData()
+    
+    private override init() {
         xml = try! Kanna.XML(url: URL(fileURLWithPath: Bundle.main.path(forResource: "colors", ofType: "xml")!), encoding: .utf8)
         colors = RSCustomColor.default
     }

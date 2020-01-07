@@ -47,6 +47,6 @@ struct RSPlayView: View {
 
 struct RSPlayView_Previews: PreviewProvider {
     static var previews: some View {
-        RSPlayView().environmentObject(UserData())
+        RSPlayView().environmentObject(UserData.default)
     }
 }

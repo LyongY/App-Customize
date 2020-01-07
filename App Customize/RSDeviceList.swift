@@ -70,6 +70,6 @@ struct RSDeviceList: View {
 
 struct RSDeviceList_Previews: PreviewProvider {
     static var previews: some View {
-        RSDeviceList().environmentObject(UserData())
+        RSDeviceList().environmentObject(UserData.default)
     }
 }

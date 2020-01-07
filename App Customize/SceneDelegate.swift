@@ -20,16 +20,16 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
 
         // Create the SwiftUI view that provides the window contents.
-        let contentView = ContentView().environmentObject(UserData())
-//        let contentView = RSColorView(model: RSColorModel(color: .cyan)).environmentObject(UserData())
+        let contentView = ContentView().environmentObject(UserData.default)
+//        let contentView = RSColorView(model: RSColorModel(color: .cyan)).environmentObject(UserData.default)
 //        let contentView = RSColorCategoryView()
-//        let contentView = RSCalendar().environmentObject(UserData())
+//        let contentView = RSCalendar().environmentObject(UserData.default)
 //        let contentView = RSScrollView {
 //            HStack {
 //                Text("1")
 //                Text("2")
 //            }
-//        }.environmentObject(UserData())
+//        }.environmentObject(UserData.default)
 
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
