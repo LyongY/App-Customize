@@ -88,3 +88,10 @@ fastlane/test_output
 # https://github.com/johnno1962/injectionforxcode
 
 iOSInjectionProject/
+
+.svn/
+.svn
+Pods/
+Pods
+Podfile.lock
+.DS_Store

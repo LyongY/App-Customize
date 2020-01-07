@@ -1,0 +1,508 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		19FE6E0223C40CB100608B49 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19FE6E0123C40CB100608B49 /* Preview Assets.xcassets */; };
+		19FE6E0D23C40CD100608B49 /* colors.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19FE6E0C23C40CD100608B49 /* colors.xml */; };
+		19FE6E1323C40D1B00608B49 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FE6E0E23C40D1B00608B49 /* ContentView.swift */; };
+		19FE6E1423C40D1B00608B49 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FE6E0F23C40D1B00608B49 /* SceneDelegate.swift */; };
+		19FE6E1523C40D1B00608B49 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FE6E1023C40D1B00608B49 /* UserData.swift */; };
+		19FE6E1623C40D1B00608B49 /* RSCustomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FE6E1123C40D1B00608B49 /* RSCustomColor.swift */; };
+		19FE6E1723C40D1B00608B49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FE6E1223C40D1B00608B49 /* AppDelegate.swift */; };
+		19FE6E4F23C40D6700608B49 /* RSCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FE6E4A23C40D6700608B49 /* RSCalendar.swift */; };
+		19FE6E5023C40D6700608B49 /* RSMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FE6E4B23C40D6700608B49 /* RSMenu.swift */; };
+		19FE6E5123C40D6700608B49 /* RSDeviceList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FE6E4C23C40D6700608B49 /* RSDeviceList.swift */; };
+		19FE6E5223C40D6700608B49 /* RSPlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FE6E4D23C40D6700608B49 /* RSPlayView.swift */; };
+		19FE6E5323C40D6700608B49 /* RSTimeBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FE6E4E23C40D6700608B49 /* RSTimeBar.swift */; };
+		19FE6E5C23C40DE200608B49 /* RSColorCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FE6E5823C40DE200608B49 /* RSColorCategoryView.swift */; };
+		19FE6E5D23C40DE200608B49 /* RSColorTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FE6E5923C40DE200608B49 /* RSColorTypeView.swift */; };
+		19FE6E5E23C40DE200608B49 /* RSColorNameMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FE6E5A23C40DE200608B49 /* RSColorNameMap.swift */; };
+		19FE6E5F23C40DE200608B49 /* RSColorDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FE6E5B23C40DE200608B49 /* RSColorDetailView.swift */; };
+		19FE6E6423C40DEC00608B49 /* RSColorValueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FE6E6023C40DEC00608B49 /* RSColorValueView.swift */; };
+		19FE6E6523C40DEC00608B49 /* RSColorSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FE6E6123C40DEC00608B49 /* RSColorSlider.swift */; };
+		19FE6E6623C40DEC00608B49 /* RSColorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FE6E6223C40DEC00608B49 /* RSColorModel.swift */; };
+		19FE6E6723C40DEC00608B49 /* RSColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FE6E6323C40DEC00608B49 /* RSColorView.swift */; };
+		19FE6E6A23C40F3C00608B49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19FE6E6823C40F3C00608B49 /* LaunchScreen.storyboard */; };
+		19FE6E6B23C40F3C00608B49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19FE6E6923C40F3C00608B49 /* Assets.xcassets */; };
+		19FE6E6D23C4102E00608B49 /* RSFileItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FE6E6C23C4102E00608B49 /* RSFileItem.swift */; };
+		19FE6E7523C426CD00608B49 /* RSScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FE6E7423C426CC00608B49 /* RSScrollView.swift */; };
+		EABC2124BAD18ECAB362896C /* Pods_App_Customize.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E721B1233D42F8A3300521A /* Pods_App_Customize.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0E721B1233D42F8A3300521A /* Pods_App_Customize.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_App_Customize.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		19FE6DF523C40CB000608B49 /* App Customize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "App Customize.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		19FE6E0123C40CB100608B49 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		19FE6E0623C40CB100608B49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19FE6E0C23C40CD100608B49 /* colors.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = colors.xml; sourceTree = "<group>"; };
+		19FE6E0E23C40D1B00608B49 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		19FE6E0F23C40D1B00608B49 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		19FE6E1023C40D1B00608B49 /* UserData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		19FE6E1123C40D1B00608B49 /* RSCustomColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSCustomColor.swift; sourceTree = "<group>"; };
+		19FE6E1223C40D1B00608B49 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		19FE6E4A23C40D6700608B49 /* RSCalendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSCalendar.swift; sourceTree = "<group>"; };
+		19FE6E4B23C40D6700608B49 /* RSMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSMenu.swift; sourceTree = "<group>"; };
+		19FE6E4C23C40D6700608B49 /* RSDeviceList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSDeviceList.swift; sourceTree = "<group>"; };
+		19FE6E4D23C40D6700608B49 /* RSPlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSPlayView.swift; sourceTree = "<group>"; };
+		19FE6E4E23C40D6700608B49 /* RSTimeBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSTimeBar.swift; sourceTree = "<group>"; };
+		19FE6E5823C40DE200608B49 /* RSColorCategoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSColorCategoryView.swift; sourceTree = "<group>"; };
+		19FE6E5923C40DE200608B49 /* RSColorTypeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSColorTypeView.swift; sourceTree = "<group>"; };
+		19FE6E5A23C40DE200608B49 /* RSColorNameMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSColorNameMap.swift; sourceTree = "<group>"; };
+		19FE6E5B23C40DE200608B49 /* RSColorDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSColorDetailView.swift; sourceTree = "<group>"; };
+		19FE6E6023C40DEC00608B49 /* RSColorValueView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSColorValueView.swift; sourceTree = "<group>"; };
+		19FE6E6123C40DEC00608B49 /* RSColorSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSColorSlider.swift; sourceTree = "<group>"; };
+		19FE6E6223C40DEC00608B49 /* RSColorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSColorModel.swift; sourceTree = "<group>"; };
+		19FE6E6323C40DEC00608B49 /* RSColorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSColorView.swift; sourceTree = "<group>"; };
+		19FE6E6823C40F3C00608B49 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		19FE6E6923C40F3C00608B49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		19FE6E6C23C4102E00608B49 /* RSFileItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSFileItem.swift; sourceTree = "<group>"; };
+		19FE6E7423C426CC00608B49 /* RSScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSScrollView.swift; sourceTree = "<group>"; };
+		4DF4627EB6025CCFBE3283CE /* Pods-App Customize.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App Customize.debug.xcconfig"; path = "Target Support Files/Pods-App Customize/Pods-App Customize.debug.xcconfig"; sourceTree = "<group>"; };
+		A3537DE8979A3FEE065AB70D /* Pods-App Customize.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App Customize.release.xcconfig"; path = "Target Support Files/Pods-App Customize/Pods-App Customize.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		19FE6DF223C40CAF00608B49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EABC2124BAD18ECAB362896C /* Pods_App_Customize.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19FE6DEC23C40CAF00608B49 = {
+			isa = PBXGroup;
+			children = (
+				19FE6DF723C40CB000608B49 /* App Customize */,
+				19FE6DF623C40CB000608B49 /* Products */,
+				65822114FB1C482FAECCDEC6 /* Pods */,
+				50737B34DC73F5A0B4D314DF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		19FE6DF623C40CB000608B49 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				19FE6DF523C40CB000608B49 /* App Customize.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		19FE6DF723C40CB000608B49 /* App Customize */ = {
+			isa = PBXGroup;
+			children = (
+				19FE6E0C23C40CD100608B49 /* colors.xml */,
+				19FE6E1223C40D1B00608B49 /* AppDelegate.swift */,
+				19FE6E0E23C40D1B00608B49 /* ContentView.swift */,
+				19FE6E1123C40D1B00608B49 /* RSCustomColor.swift */,
+				19FE6E0F23C40D1B00608B49 /* SceneDelegate.swift */,
+				19FE6E1023C40D1B00608B49 /* UserData.swift */,
+				19FE6E5623C40D9700608B49 /* 小模块 */,
+				19FE6E5523C40D8D00608B49 /* 选择及修改颜色 */,
+				19FE6E5723C40DB300608B49 /* 配色 */,
+				19FE6E7323C41D2200608B49 /* 总览 */,
+				19FE6E6923C40F3C00608B49 /* Assets.xcassets */,
+				19FE6E6823C40F3C00608B49 /* LaunchScreen.storyboard */,
+				19FE6E0623C40CB100608B49 /* Info.plist */,
+				19FE6E0023C40CB100608B49 /* Preview Content */,
+			);
+			path = "App Customize";
+			sourceTree = "<group>";
+		};
+		19FE6E0023C40CB100608B49 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				19FE6E0123C40CB100608B49 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		19FE6E5523C40D8D00608B49 /* 选择及修改颜色 */ = {
+			isa = PBXGroup;
+			children = (
+				19FE6E5823C40DE200608B49 /* RSColorCategoryView.swift */,
+				19FE6E5B23C40DE200608B49 /* RSColorDetailView.swift */,
+				19FE6E5A23C40DE200608B49 /* RSColorNameMap.swift */,
+				19FE6E5923C40DE200608B49 /* RSColorTypeView.swift */,
+				19FE6E7423C426CC00608B49 /* RSScrollView.swift */,
+			);
+			name = "选择及修改颜色";
+			sourceTree = "<group>";
+		};
+		19FE6E5623C40D9700608B49 /* 小模块 */ = {
+			isa = PBXGroup;
+			children = (
+				19FE6E4A23C40D6700608B49 /* RSCalendar.swift */,
+				19FE6E4C23C40D6700608B49 /* RSDeviceList.swift */,
+				19FE6E4B23C40D6700608B49 /* RSMenu.swift */,
+				19FE6E4D23C40D6700608B49 /* RSPlayView.swift */,
+				19FE6E4E23C40D6700608B49 /* RSTimeBar.swift */,
+				19FE6E6C23C4102E00608B49 /* RSFileItem.swift */,
+			);
+			name = "小模块";
+			sourceTree = "<group>";
+		};
+		19FE6E5723C40DB300608B49 /* 配色 */ = {
+			isa = PBXGroup;
+			children = (
+				19FE6E6223C40DEC00608B49 /* RSColorModel.swift */,
+				19FE6E6123C40DEC00608B49 /* RSColorSlider.swift */,
+				19FE6E6023C40DEC00608B49 /* RSColorValueView.swift */,
+				19FE6E6323C40DEC00608B49 /* RSColorView.swift */,
+			);
+			name = "配色";
+			sourceTree = "<group>";
+		};
+		19FE6E7323C41D2200608B49 /* 总览 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "总览";
+			sourceTree = "<group>";
+		};
+		50737B34DC73F5A0B4D314DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0E721B1233D42F8A3300521A /* Pods_App_Customize.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		65822114FB1C482FAECCDEC6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4DF4627EB6025CCFBE3283CE /* Pods-App Customize.debug.xcconfig */,
+				A3537DE8979A3FEE065AB70D /* Pods-App Customize.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		19FE6DF423C40CAF00608B49 /* App Customize */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19FE6E0923C40CB100608B49 /* Build configuration list for PBXNativeTarget "App Customize" */;
+			buildPhases = (
+				52984FEBDD07E834C6C25CC8 /* [CP] Check Pods Manifest.lock */,
+				19FE6DF123C40CAF00608B49 /* Sources */,
+				19FE6DF223C40CAF00608B49 /* Frameworks */,
+				19FE6DF323C40CAF00608B49 /* Resources */,
+				800ACE9BD17E13B9D9251380 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "App Customize";
+			productName = "App Customize";
+			productReference = 19FE6DF523C40CB000608B49 /* App Customize.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		19FE6DED23C40CAF00608B49 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = LyongY;
+				TargetAttributes = {
+					19FE6DF423C40CAF00608B49 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = 19FE6DF023C40CAF00608B49 /* Build configuration list for PBXProject "App Customize" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 19FE6DEC23C40CAF00608B49;
+			productRefGroup = 19FE6DF623C40CB000608B49 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				19FE6DF423C40CAF00608B49 /* App Customize */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		19FE6DF323C40CAF00608B49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19FE6E6A23C40F3C00608B49 /* LaunchScreen.storyboard in Resources */,
+				19FE6E0223C40CB100608B49 /* Preview Assets.xcassets in Resources */,
+				19FE6E6B23C40F3C00608B49 /* Assets.xcassets in Resources */,
+				19FE6E0D23C40CD100608B49 /* colors.xml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		52984FEBDD07E834C6C25CC8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-App Customize-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		800ACE9BD17E13B9D9251380 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-App Customize/Pods-App Customize-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-App Customize/Pods-App Customize-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-App Customize/Pods-App Customize-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		19FE6DF123C40CAF00608B49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19FE6E7523C426CD00608B49 /* RSScrollView.swift in Sources */,
+				19FE6E1723C40D1B00608B49 /* AppDelegate.swift in Sources */,
+				19FE6E5C23C40DE200608B49 /* RSColorCategoryView.swift in Sources */,
+				19FE6E6D23C4102E00608B49 /* RSFileItem.swift in Sources */,
+				19FE6E5223C40D6700608B49 /* RSPlayView.swift in Sources */,
+				19FE6E5023C40D6700608B49 /* RSMenu.swift in Sources */,
+				19FE6E5E23C40DE200608B49 /* RSColorNameMap.swift in Sources */,
+				19FE6E1323C40D1B00608B49 /* ContentView.swift in Sources */,
+				19FE6E5323C40D6700608B49 /* RSTimeBar.swift in Sources */,
+				19FE6E1623C40D1B00608B49 /* RSCustomColor.swift in Sources */,
+				19FE6E1523C40D1B00608B49 /* UserData.swift in Sources */,
+				19FE6E5F23C40DE200608B49 /* RSColorDetailView.swift in Sources */,
+				19FE6E4F23C40D6700608B49 /* RSCalendar.swift in Sources */,
+				19FE6E5D23C40DE200608B49 /* RSColorTypeView.swift in Sources */,
+				19FE6E6423C40DEC00608B49 /* RSColorValueView.swift in Sources */,
+				19FE6E6523C40DEC00608B49 /* RSColorSlider.swift in Sources */,
+				19FE6E6723C40DEC00608B49 /* RSColorView.swift in Sources */,
+				19FE6E1423C40D1B00608B49 /* SceneDelegate.swift in Sources */,
+				19FE6E6623C40DEC00608B49 /* RSColorModel.swift in Sources */,
+				19FE6E5123C40D6700608B49 /* RSDeviceList.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		19FE6E0723C40CB100608B49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		19FE6E0823C40CB100608B49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		19FE6E0A23C40CB100608B49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DF4627EB6025CCFBE3283CE /* Pods-App Customize.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"App Customize/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "App Customize/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "LyongY.App-Customize";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		19FE6E0B23C40CB100608B49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3537DE8979A3FEE065AB70D /* Pods-App Customize.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"App Customize/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "App Customize/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "LyongY.App-Customize";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		19FE6DF023C40CAF00608B49 /* Build configuration list for PBXProject "App Customize" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19FE6E0723C40CB100608B49 /* Debug */,
+				19FE6E0823C40CB100608B49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19FE6E0923C40CB100608B49 /* Build configuration list for PBXNativeTarget "App Customize" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19FE6E0A23C40CB100608B49 /* Debug */,
+				19FE6E0B23C40CB100608B49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 19FE6DED23C40CAF00608B49 /* Project object */;
+}
