@@ -30,25 +30,49 @@ struct ContentView: View {
     }
     
     var body: some View {
-        GeometryReader { frame in
-            NavigationView {
-                RSScrollView {
-                    HStack {
-                        Text("1").frame(width: frame.size.width)
-                        Text("2").frame(width: frame.size.width)
-                        Text("3").frame(width: frame.size.width)
-                        Text("4").frame(width: frame.size.width)
-                        Text("5").frame(width: frame.size.width)
-                        Text("6").frame(width: frame.size.width)
-                        Text("7").frame(width: frame.size.width)
-                        Text("8").frame(width: frame.size.width)
-                    }
-                }
+        NavigationView {
+//            GeometryReader { frame in
+//                ScrollView(.horizontal, showsIndicators: false) {
+//                    HStack {
+//                        Rectangle().fill(Color(.red))
+////                        RSLive1()//.frame(width: frame.size.width, height: frame.size.height - 88)
+////                        Text("2").frame(width: frame.size.width)
+////                        Text("3").frame(width: frame.size.width)
+////                        Text("4").frame(width: frame.size.width)
+////                        Text("5").frame(width: frame.size.width)
+////                        Text("6").frame(width: frame.size.width)
+////                        Text("7").frame(width: frame.size.width)
+////                        Text("8").frame(width: frame.size.width)
+//                    }
+//                }
+//                RSScrollView {
+//                    HStack {
+//                        RSLive1()//.frame(width: frame.size.width, height: frame.size.height - 88)
+////                        Text("2").frame(width: frame.size.width)
+////                        Text("3").frame(width: frame.size.width)
+////                        Text("4").frame(width: frame.size.width)
+////                        Text("5").frame(width: frame.size.width)
+////                        Text("6").frame(width: frame.size.width)
+////                        Text("7").frame(width: frame.size.width)
+////                        Text("8").frame(width: frame.size.width)
+//                    }
+//                }
+            
+            RSColectionView(data: [
+                AnyView(RSLive1()),
+                AnyView(RSLive1())
+//                Text("111111"),
+//                Text("2222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222"),
+            ]).environmentObject(UserData.default)
+                .background(Color(.lightGray))
+                .edgesIgnoringSafeArea([.bottom])
+                .navigationBarTitle("tttt", displayMode: .inline)
                 .navigationBarItems(leading: self.leftButton, trailing: self.rightButton)
                 .sheet(isPresented: self.$showColors) {
                     RSColorCategoryView()
                 }
-            }
+                
+//            }
         }
     }
 }

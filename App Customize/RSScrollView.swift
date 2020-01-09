@@ -23,7 +23,6 @@ struct RSScrollView<Content: View>: View {
             self.content()
         }
         .navigationBarTitle(Text(title), displayMode: .inline)
-        
     }
 }
 
@@ -54,6 +53,7 @@ struct RSScrollViewRepresent<Content: View>: UIViewRepresentable {
         scrollView.hostingController.rootView = AnyView(self.content())
         scrollView.delegate = scrollView
         scrollView.addSubview(scrollView.hostingController.view)
+        scrollView.contentSize.height = 0
         
         let hostView = scrollView.hostingController.view!
         hostView.translatesAutoresizingMaskIntoConstraints = false
@@ -67,7 +67,7 @@ struct RSScrollViewRepresent<Content: View>: UIViewRepresentable {
     }
     
     func updateUIView(_ uiView: RSScrollViewR<Content>, context: UIViewRepresentableContext<RSScrollViewRepresent<Content>>) {
-        
+
     }
 }
 
@@ -98,5 +98,9 @@ class RSScrollViewR<Content: View>: UIScrollView, UIScrollViewDelegate {
             "Push List",
         ]
         title = data[index]
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        scrollView.contentSize.height = 0
     }
 }

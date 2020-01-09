@@ -30,6 +30,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 //                Text("2")
 //            }
 //        }.environmentObject(UserData.default)
+//        let contentView = RSColectionView(data: [
+//            Text("111111"),
+//            Text("22222222222222222222222222222"),
+//        ]).environmentObject(UserData.default)
 
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
