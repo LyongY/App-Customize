@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		191951C123C56E26001380DC /* RSLive1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191951C023C56E26001380DC /* RSLive1.swift */; };
 		191951C323C5B180001380DC /* RSColectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191951C223C5B180001380DC /* RSColectionView.swift */; };
+		19DE30DD23C81E9400EAE98B /* RSToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DE30DC23C81E9400EAE98B /* RSToolBar.swift */; };
+		19DE30E123C8649200EAE98B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19DE30E023C8649200EAE98B /* CoreGraphics.framework */; };
 		19FE6E0223C40CB100608B49 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19FE6E0123C40CB100608B49 /* Preview Assets.xcassets */; };
 		19FE6E0D23C40CD100608B49 /* colors.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19FE6E0C23C40CD100608B49 /* colors.xml */; };
 		19FE6E1323C40D1B00608B49 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FE6E0E23C40D1B00608B49 /* ContentView.swift */; };
@@ -40,6 +42,8 @@
 		0E721B1233D42F8A3300521A /* Pods_App_Customize.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_App_Customize.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		191951C023C56E26001380DC /* RSLive1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSLive1.swift; sourceTree = "<group>"; };
 		191951C223C5B180001380DC /* RSColectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSColectionView.swift; sourceTree = "<group>"; };
+		19DE30DC23C81E9400EAE98B /* RSToolBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSToolBar.swift; sourceTree = "<group>"; };
+		19DE30E023C8649200EAE98B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		19FE6DF523C40CB000608B49 /* App Customize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "App Customize.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		19FE6E0123C40CB100608B49 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		19FE6E0623C40CB100608B49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -75,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19DE30E123C8649200EAE98B /* CoreGraphics.framework in Frameworks */,
 				EABC2124BAD18ECAB362896C /* Pods_App_Customize.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,7 +142,6 @@
 				19FE6E5A23C40DE200608B49 /* RSColorNameMap.swift */,
 				19FE6E5923C40DE200608B49 /* RSColorTypeView.swift */,
 				19FE6E7423C426CC00608B49 /* RSScrollView.swift */,
-				191951C223C5B180001380DC /* RSColectionView.swift */,
 			);
 			name = "选择及修改颜色";
 			sourceTree = "<group>";
@@ -151,6 +155,8 @@
 				19FE6E4D23C40D6700608B49 /* RSPlayView.swift */,
 				19FE6E4E23C40D6700608B49 /* RSTimeBar.swift */,
 				19FE6E6C23C4102E00608B49 /* RSFileItem.swift */,
+				191951C223C5B180001380DC /* RSColectionView.swift */,
+				19DE30DC23C81E9400EAE98B /* RSToolBar.swift */,
 			);
 			name = "小模块";
 			sourceTree = "<group>";
@@ -177,6 +183,7 @@
 		50737B34DC73F5A0B4D314DF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				19DE30E023C8649200EAE98B /* CoreGraphics.framework */,
 				0E721B1233D42F8A3300521A /* Pods_App_Customize.framework */,
 			);
 			name = Frameworks;
@@ -314,6 +321,7 @@
 				19FE6E5223C40D6700608B49 /* RSPlayView.swift in Sources */,
 				191951C123C56E26001380DC /* RSLive1.swift in Sources */,
 				19FE6E5023C40D6700608B49 /* RSMenu.swift in Sources */,
+				19DE30DD23C81E9400EAE98B /* RSToolBar.swift in Sources */,
 				19FE6E5E23C40DE200608B49 /* RSColorNameMap.swift in Sources */,
 				19FE6E1323C40D1B00608B49 /* ContentView.swift in Sources */,
 				19FE6E5323C40D6700608B49 /* RSTimeBar.swift in Sources */,

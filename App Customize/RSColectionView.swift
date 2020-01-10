@@ -10,15 +10,17 @@ import SwiftUI
 
 struct RSColectionView: View {
     
+    @Binding var title: String
+    
     var data: Array<AnyView>
     var body: some View {
-        RSColectionViewRepresent(data: data)
+        RSColectionViewRepresent(title: $title, data: data)
     }
 }
 
 struct RSColectionView_Previews: PreviewProvider {
     static var previews: some View {
-        RSColectionView(data: [
+        RSColectionView(title: .constant("Live 1"), data: [
             AnyView(Text("q")),
             AnyView(Text("w")),
             AnyView(Text("e")),
@@ -30,11 +32,11 @@ struct RSColectionViewRepresent: UIViewRepresentable {
     
     typealias UIViewType = UICollectionView
 
-    
+    @Binding var title: String
     var data: Array<AnyView>
     
     func makeCoordinator() -> RSColectionViewRepresent.Coordinator {
-        let coordinator = Coordinator(data: data)
+        let coordinator = Coordinator(title: $title, data: data)
         return coordinator
     }
     
@@ -61,9 +63,11 @@ struct RSColectionViewRepresent: UIViewRepresentable {
     
     class Coordinator: NSObject, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
         
+        @Binding var title: String
         var data: Array<AnyView>
         
-        init(data: Array<AnyView>) {
+        init(title: Binding<String>, data: Array<AnyView>) {
+            self._title = title
             self.data = data
         }
         
@@ -79,7 +83,6 @@ struct RSColectionViewRepresent: UIViewRepresentable {
             let hosting = cell.hosting
             hosting.rootView = data[indexPath.item]
             hosting.rootView = AnyView(hosting.rootView.edgesIgnoringSafeArea(.all))
-//            hosting.rootView.frame(width: cell.bounds.size.width, height: cell.bounds.size.height).edgesIgnoringSafeArea(.bottom)
             let hostView = hosting.view!
             cell.addSubview(hostView)
             
@@ -106,6 +109,21 @@ struct RSColectionViewRepresent: UIViewRepresentable {
                 }
             }
             return .init(width: UIScreen.main.bounds.size.width, height: height)
+        }
+        
+        func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+            let index = Int((scrollView.contentOffset.x / scrollView.contentSize.width) * (scrollView.contentSize.width / scrollView.bounds.size.width))
+            let data: Array<String> = [
+                "Live 1",
+                "Live 2",
+                "Live 3",
+                "Playback 1",
+                "Playback 2",
+                "File 1",
+                "File 2",
+                "Push List",
+            ]
+            title = data[index]
         }
     }
     

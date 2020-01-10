@@ -12,6 +12,7 @@ struct ContentView: View {
     @EnvironmentObject var userData: UserData
     
     @State var showColors = false
+    @State var title: String = "Live 1"
     
     var leftButton: some View {
         Button(action: {
@@ -31,54 +32,59 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-//            GeometryReader { frame in
-//                ScrollView(.horizontal, showsIndicators: false) {
-//                    HStack {
-//                        Rectangle().fill(Color(.red))
-////                        RSLive1()//.frame(width: frame.size.width, height: frame.size.height - 88)
-////                        Text("2").frame(width: frame.size.width)
-////                        Text("3").frame(width: frame.size.width)
-////                        Text("4").frame(width: frame.size.width)
-////                        Text("5").frame(width: frame.size.width)
-////                        Text("6").frame(width: frame.size.width)
-////                        Text("7").frame(width: frame.size.width)
-////                        Text("8").frame(width: frame.size.width)
-//                    }
-//                }
-//                RSScrollView {
-//                    HStack {
-//                        RSLive1()//.frame(width: frame.size.width, height: frame.size.height - 88)
-////                        Text("2").frame(width: frame.size.width)
-////                        Text("3").frame(width: frame.size.width)
-////                        Text("4").frame(width: frame.size.width)
-////                        Text("5").frame(width: frame.size.width)
-////                        Text("6").frame(width: frame.size.width)
-////                        Text("7").frame(width: frame.size.width)
-////                        Text("8").frame(width: frame.size.width)
-//                    }
-//                }
-            
-            RSColectionView(data: [
+            RSColectionView(title: $title,data: [
                 AnyView(RSLive1()),
                 AnyView(RSLive1())
-//                Text("111111"),
-//                Text("2222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222"),
             ]).environmentObject(UserData.default)
                 .background(Color(.lightGray))
                 .edgesIgnoringSafeArea([.bottom])
-                .navigationBarTitle("tttt", displayMode: .inline)
+                .navigationBarTitle(Text(title), displayMode: .inline)
                 .navigationBarItems(leading: self.leftButton, trailing: self.rightButton)
+                .background(RSNavigationConfig { nav in
+                    nav.navigationBar.tintColor = self.userData.colors.text.navigation
+                    nav.navigationBar.titleTextAttributes = [.foregroundColor: self.userData.colors.text.navigation]
+                    nav.navigationBar.setBackgroundImage(UIImage(gradientColors: [self.userData.colors.theme.start, self.userData.colors.theme.end]), for: .default)
+                })
                 .sheet(isPresented: self.$showColors) {
                     RSColorCategoryView()
-                }
-                
-//            }
+            }
         }
+    }
+}
+
+public extension UIImage {
+    convenience init?(gradientColors:[UIColor], size:CGSize = .init(width: UIScreen.main.bounds.size.width / UIScreen.main.scale, height: 10))
+    {
+        UIGraphicsBeginImageContextWithOptions(size, true, 0)
+        let context = UIGraphicsGetCurrentContext()
+        let colorSpace = CGColorSpaceCreateDeviceRGB()
+        let colors = gradientColors.map { (color) in
+            color.cgColor
+        }
+        let gradient = CGGradient(colorsSpace: colorSpace, colors: colors as CFArray, locations: nil)
+        context?.drawLinearGradient(gradient!, start: .init(x: 0, y: 0.5), end: .init(x: size.width, y: 0.5), options: .init(rawValue: 0))
+        self.init(cgImage:UIGraphicsGetImageFromCurrentImageContext()!.cgImage!)
+        UIGraphicsEndImageContext()
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView().environmentObject(UserData.default)
+    }
+}
+
+
+struct RSNavigationConfig: UIViewControllerRepresentable {
+    var config: (UINavigationController) -> Void
+    
+    func makeUIViewController(context: UIViewControllerRepresentableContext<RSNavigationConfig>) -> RSNavigationConfig.UIViewControllerType {
+        return UIViewController()
+    }
+    
+    func updateUIViewController(_ uiViewController: UIViewController, context: UIViewControllerRepresentableContext<RSNavigationConfig>) {
+        if let nav = uiViewController.navigationController {
+            config(nav)
+        }
     }
 }

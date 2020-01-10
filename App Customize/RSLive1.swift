@@ -10,20 +10,17 @@ import SwiftUI
 
 struct RSLive1: View {
     var body: some View {
-            VStack {
+        GeometryReader { frame in
+            VStack(spacing: 0) {
                 RSPlayView()
                     .frame(width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.width * 9 / 16)
-                HStack { // Toolbar
-                    Image("About")
-                    Image("File")
-                }
+                RSToolBar(data: ["About", "File", "File", "File", "File"])
+                    .frame(height: 50)
                 RSDeviceList()
                 Spacer()
-                HStack { // Toolbar
-                    Image("About").padding(.bottom, nil)
-                    Image("File").padding(.bottom, nil)
-                }
+                RSToolBar(data: ["About", "File", "File", "File"], paddingImageBottom: true)
             }
+        }
     }
 }
 

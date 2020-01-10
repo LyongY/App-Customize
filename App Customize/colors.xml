@@ -20,8 +20,8 @@
     <color name="timebarSpliteNormal">#f3b1be</color> <!--刻度-->
     <color name="timebarSpliteCenterH">#f3b1be</color> <!--中线-->
 
-    <color name="themeStart">#f3b1be</color> <!--导航栏-->
-    <color name="themeEnd">#f3b1be</color> <!--导航栏-->
+    <color name="themeStart">#ffffff</color> <!--导航栏-->
+    <color name="themeEnd">#000000</color> <!--导航栏-->
     <color name="themeItemStart">#f3b1be</color> <!--选中项背景色-->
     <color name="themeItemEnd">#f3b1be</color> <!--选中项背景色-->
     <color name="themeSwitch">#f3b1be</color> <!--对话框按钮-->

@@ -19,6 +19,21 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
 
+        // Test Color
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+//            UserData.default.colors.text.navigation = .black
+//            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+//                UserData.default.colors.text.navigation = .yellow
+//                DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+//                    UserData.default.colors.text.navigation = .red
+//                    DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+//                        UserData.default.colors.text.navigation = .blue
+//                    }
+//                }
+//            }
+//        }
+        
+        
         // Create the SwiftUI view that provides the window contents.
         let contentView = ContentView().environmentObject(UserData.default)
 //        let contentView = RSColorView(model: RSColorModel(color: .cyan)).environmentObject(UserData.default)
