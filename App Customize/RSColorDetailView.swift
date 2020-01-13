@@ -29,7 +29,8 @@ struct RSColorDetailView: View {
         .navigationBarItems(trailing: rightButton)
         .navigationBarTitle((rs_color_map[key] ?? key))
         .sheet(isPresented: $showColorView) {
-            RSColorView(model: RSColorModel(color: .magenta))
+            RSColorView(model: RSColorModel(key: self.key, userData: .constant(.default))!)
+                .environmentObject(UserData.default)
         }
     }
 }

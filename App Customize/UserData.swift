@@ -22,7 +22,7 @@ class UserData: NSObject, ObservableObject {
     
     private override init() {
         xml = try! Kanna.XML(url: URL(fileURLWithPath: Bundle.main.path(forResource: "colors", ofType: "xml")!), encoding: .utf8)
-        colors = RSCustomColor.default
+        colors = RSCustomColor()
     }
 }
 

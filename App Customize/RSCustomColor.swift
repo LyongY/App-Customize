@@ -15,10 +15,6 @@ struct RSCustomColor {
     var timebar = Timebar()
     var theme = Theme()
     var splite = Splite()
-    
-    static let `default`: RSCustomColor = RSCustomColor()
-    
-    private init() { }
 }
 
 extension RSCustomColor {

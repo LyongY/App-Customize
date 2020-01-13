@@ -11,12 +11,15 @@ import SwiftUI
 struct ContentView: View {
     @EnvironmentObject var userData: UserData
     
+    @State var showSheet = false
     @State var showColors = false
+    @State var showShare = false
     @State var title: String = "Live 1"
     
     var leftButton: some View {
         Button(action: {
-
+            self.showShare = true
+            self.showSheet.toggle()
         }) {
             Text("Export")
         }
@@ -24,7 +27,8 @@ struct ContentView: View {
     
     var rightButton: some View {
         Button(action: {
-            self.showColors.toggle()
+            self.showColors = true
+            self.showSheet.toggle()
         }) {
             Text("Colors")
         }
@@ -45,9 +49,19 @@ struct ContentView: View {
                     nav.navigationBar.titleTextAttributes = [.foregroundColor: self.userData.colors.text.navigation]
                     nav.navigationBar.setBackgroundImage(UIImage(gradientColors: [self.userData.colors.theme.start, self.userData.colors.theme.end]), for: .default)
                 })
-                .sheet(isPresented: self.$showColors) {
-                    RSColorCategoryView()
-            }
+                .sheet(isPresented: self.$showSheet, onDismiss: {
+                    self.showColors = false
+                    self.showShare = false
+                }, content: {
+                    if self.showShare {
+                        ActivityViewController(
+                            activityItems: [URL (fileURLWithPath: Bundle.main.path(forResource: "colors", ofType: "xml")!)]
+                        )
+                    } else if self.showColors {
+                        RSColorCategoryView()
+                            .environmentObject(self.userData)
+                    }
+                })
         }
     }
 }
@@ -86,5 +100,19 @@ struct RSNavigationConfig: UIViewControllerRepresentable {
         if let nav = uiViewController.navigationController {
             config(nav)
         }
+    }
+}
+
+struct ActivityViewController: UIViewControllerRepresentable {
+    var activityItems: [Any]
+    var applicationActivities: [UIActivity]? = nil
+
+    func makeUIViewController(context: UIViewControllerRepresentableContext<ActivityViewController>) -> UIActivityViewController {
+        let controller = UIActivityViewController(activityItems: activityItems, applicationActivities: applicationActivities)
+        return controller
+    }
+
+    func updateUIViewController(_ uiViewController: UIActivityViewController, context: UIViewControllerRepresentableContext<ActivityViewController>) {
+        
     }
 }

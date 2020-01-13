@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import SwiftUI
 
 class RSColorModel: ObservableObject {
+    
+    @Binding var userData: UserData
     
     enum ColorMode: String, CaseIterable {
         case rgb = "RGB Sliders"
@@ -16,10 +19,14 @@ class RSColorModel: ObservableObject {
         case all = "all"
     }
     
+    var key: String = ""
+    
     @Published var mode: ColorMode = .rgb
     @Published var color: UIColor {
         didSet {
             self.updateColorValue()
+            allColor[key] = color
+            self.userData.colors = RSCustomColor()
         }
     }
     
@@ -83,6 +90,24 @@ class RSColorModel: ObservableObject {
         
     init(color: UIColor) {
         self.color = color
+        red = ""
+        green = ""
+        blue = ""
+        hue = ""
+        saturation = ""
+        brightness = ""
+        self._userData = .constant(.default)
+        self.updateColorValue()
+    }
+    
+    init?(key: String, userData: Binding<UserData>) {
+        let keyOfColor = allColor[key]
+        guard let currentColor = keyOfColor else {
+            return nil
+        }
+        self.key = key
+        self._userData = userData
+        color = currentColor
         red = ""
         green = ""
         blue = ""
