@@ -65,6 +65,7 @@ struct RSDeviceList: View {
                 
             Spacer()
         }
+        .background(Color(colors.background.list))
     }
 }
 

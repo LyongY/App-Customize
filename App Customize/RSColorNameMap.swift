@@ -30,7 +30,7 @@ let rs_color_category_data = [
     (category: "Time Bar", data: [
         "timebarBackground",
         "timebarSpliteNormal",
-        "timebarSpliteCenterH",
+        "timebarSpliteCenterHorizontal",
     ]),
     (category: "Theme", data: [
         "themeStart",
@@ -67,7 +67,7 @@ let rs_color_map = [
     
     "timebarBackground": "timebar Background",
     "timebarSpliteNormal": "timebar Splite Normal",
-    "timebarSpliteCenterH": "timebar Splite CenterH",
+    "timebarSpliteCenterHorizontal": "timebar Splite Center Horizontal",
     
     "themeStart": "theme Start",
     "themeEnd": "theme End",

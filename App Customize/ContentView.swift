@@ -38,7 +38,9 @@ struct ContentView: View {
         NavigationView {
             RSColectionView(title: $title,data: [
                 AnyView(RSLive1()),
-                AnyView(RSLive1())
+                AnyView(RSLive2()),
+                AnyView(RSLive3()),
+                AnyView(RSPlayback1()),
             ]).environmentObject(UserData.default)
                 .background(Color(.lightGray))
                 .edgesIgnoringSafeArea([.bottom])

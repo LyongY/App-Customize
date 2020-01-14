@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="textColor">#fffa00</color> <!--普通文字-->
+    <color name="textColor">#000000</color> <!--普通文字-->
     <color name="textDetail">#f3b1be</color> <!--文件列表通道设备细节，设备列表设备名等标题，HintTextColor-->
     <color name="textDisable">#f3b1be</color> <!--设备掉线-->
     <color name="textNavigation">#ffffff</color> <!--导航栏文字-->
@@ -10,11 +10,11 @@
     <color name="textConnectOnline">#f3b1be</color> <!--设备列表下连接成功文字颜色-->
     <color name="textConnectOffline">#f3b1be</color> <!--设备列表下连接失败文字颜色-->
 
-    <color name="backgroundBasic">#8eb1be</color> <!--基本背景-->
-    <color name="backgroundList">#0081ff</color> <!--列表背景-->
-    <color name="backgroundToolbar">#dcff00</color> <!--工具栏-->
+    <color name="backgroundBasic">#f3b1be</color> <!--基本背景-->
+    <color name="backgroundList">#ffffff</color> <!--列表背景-->
+    <color name="backgroundToolbar">#f3b1be</color> <!--工具栏-->
     <color name="backgroundMark">#f3b1be</color> <!--日历下的点-->
-    <color name="backgroundNotice">#ff0000</color> <!--通知数的背景色-->
+    <color name="backgroundNotice">#ffff0000</color> <!--通知数的背景色-->
 
     <color name="timebarBackground">#f3b1be</color> <!--背景色-->
     <color name="timebarSpliteNormal">#f3b1be</color> <!--刻度-->
@@ -27,10 +27,10 @@
     <color name="themeSwitch">#f3b1be</color> <!--Switch按钮颜色-->
     <color name="themeProgressBar">#f3b1be</color> <!--本地回放进度条-->
     <color name="themeButton">#5a6b72</color> <!--非渐变色按钮颜色-->
-    <color name="themeButtonPress">#d8d7dc</color> <!--非渐变色按钮点击的颜色-->
+    <color name="themeButtonPress">#99d8d7dc</color> <!--非渐变色按钮点击的颜色-->
 
 
-    <color name="spliteNormal">#9bd7dc</color> <!--窗口框颜色，item分割线-->
-    <color name="spliteSelected">#0029be</color> <!--窗口选中颜色-->
+    <color name="spliteNormal">#99d8d7dc</color> <!--窗口框颜色，item分割线-->
+    <color name="spliteSelected">#f3b1be</color> <!--窗口选中颜色-->
 
 </resources>

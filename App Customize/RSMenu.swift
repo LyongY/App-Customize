@@ -50,6 +50,7 @@ struct RSMenu: View {
             .padding()
             Spacer()
         }
+        .background(Color(colors.background.basic))
     }
 }
 

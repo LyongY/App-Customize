@@ -10,6 +10,8 @@ import SwiftUI
 
 struct RSToolBar: View {
     
+    @EnvironmentObject var userData: UserData
+    
     var data: Array<String>
     var paddingImageBottom: Bool = false
     var body: some View {
@@ -27,6 +29,6 @@ struct RSToolBar: View {
 
 struct RSToolBar_Previews: PreviewProvider {
     static var previews: some View {
-        RSToolBar(data: ["About", "File"])
+        RSToolBar(data: ["About", "File"]).environmentObject(UserData.default)
     }
 }

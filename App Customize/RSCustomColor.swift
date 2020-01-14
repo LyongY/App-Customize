@@ -45,7 +45,7 @@ extension RSCustomColor {
     struct Timebar {
         var background: UIColor = allColor["timebarBackground"]! { didSet { allColor["timebarBackground"] = background } }
         var spliteNormal: UIColor = allColor["timebarSpliteNormal"]! { didSet { allColor["timebarSpliteNormal"] = spliteNormal } }
-        var spliteCenterH: UIColor = allColor["timebarSpliteCenterH"]! { didSet { allColor["timebarSpliteCenterH"] = spliteCenterH } }
+        var spliteCenterH: UIColor = allColor["timebarSpliteCenterHorizontal"]! { didSet { allColor["timebarSpliteCenterHorizontal"] = spliteCenterH } }
     }
 }
 

@@ -19,7 +19,7 @@ struct RSPlayView: View {
     func item(selected: Bool) -> some View {
         ZStack {
             Rectangle().fill(Color(.black))
-            Rectangle().stroke(Color(selected ? .red : .gray), lineWidth: 3)
+            Rectangle().stroke(Color(selected ? self.colors.splite.selected : self.colors.splite.normal), lineWidth: 3)
         }.clipped()
     }
     

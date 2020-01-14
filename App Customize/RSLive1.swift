@@ -9,16 +9,33 @@
 import SwiftUI
 
 struct RSLive1: View {
+    
+    @EnvironmentObject var userData: UserData
+    
     var body: some View {
         GeometryReader { frame in
             VStack(spacing: 0) {
                 RSPlayView()
                     .frame(width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.width * 9 / 16)
-                RSToolBar(data: ["About", "File", "File", "File", "File"])
-                    .frame(height: 50)
+
+                HStack {
+                    ZStack {
+                        Rectangle()
+                            .fill(Color(self.userData.colors.background.list))
+                            .frame(maxWidth: .infinity, maxHeight: 35)
+                            .clipShape(RoundedRectangle(cornerRadius: 8))
+                        Text("Demo 1 - Channel 01")
+                            .foregroundColor(Color(self.userData.colors.text.text))
+                    }
+                    Image("RemotePlayback")
+                }
+                .padding()
+                .background(Color(self.userData.colors.background.toolbar))
+                
                 RSDeviceList()
-                Spacer()
-                RSToolBar(data: ["About", "File", "File", "File"], paddingImageBottom: true)
+                                
+                RSToolBar(data: ["Snap", "Record", "Split", "AudioOff", "TwoWayTalk"], paddingImageBottom: true)
+                    .background(Color(self.userData.colors.background.toolbar))
             }
         }
     }
