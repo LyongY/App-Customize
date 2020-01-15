@@ -68,6 +68,7 @@ struct RSCalendar: View {
                 }
             }
         }
+        .background(Color(colors.background.basic))
     }
 }
 

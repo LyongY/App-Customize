@@ -23,15 +23,15 @@ struct RSFileItem: View {
     
     var body: some View {
         HStack {
-            Image(systemName: "folder")
-                .frame(width: 160, height: 90)
+            Image(systemName: "camera")
+                .frame(width: 140, height: 80)
                 .scaleEffect(3)
                 .background(Color(.lightGray))
                 .foregroundColor(Color(.white))
             VStack(alignment: .leading) {
-                Text(date)
-                Text(time)
-                Text(detail)
+                Text(date).foregroundColor(Color(colors.text.text))
+                Text(time).foregroundColor(Color(colors.text.text))
+                Text(detail).foregroundColor(Color(colors.text.detail)).font(.custom("" ,size: 13))
             }
             Spacer()
             Image("SelectAll")
@@ -52,9 +52,11 @@ struct RSFileSection: View {
     
     var body: some View {
         VStack(alignment: .leading ,spacing: 0) {
+            Rectangle().fill(Color(.clear)).frame(height: 10)
+
             HStack {
                 Rectangle()
-                    .fill(Color(self.colors.theme.button))
+                    .fill(Color(self.colors.theme.switch))
                     .frame(width: 20, height: 20)
                 Text(date)
                     .foregroundColor(Color(colors.text.text))
@@ -63,6 +65,8 @@ struct RSFileSection: View {
                 item
             }
             .padding()
+            
+            Rectangle().fill(Color(colors.splite.normal)).frame(height: 1)
         }
     }
 }

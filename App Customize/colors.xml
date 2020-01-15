@@ -6,7 +6,7 @@
     <color name="textNavigation">#ffffff</color> <!--导航栏文字-->
     <color name="textToday">#f3b1be</color> <!--日历当天文字颜色-->
     <color name="textNotice">#f3b1be</color> <!--通知未点击-->
-    <color name="textColorInColorView">#ffffff</color> <!--列表选中通道，码流选中文字-->
+    <color name="textColorInColorView">#ff0000</color> <!--列表选中通道，码流选中文字-->
     <color name="textConnectOnline">#f3b1be</color> <!--设备列表下连接成功文字颜色-->
     <color name="textConnectOffline">#f3b1be</color> <!--设备列表下连接失败文字颜色-->
 
@@ -16,13 +16,13 @@
     <color name="backgroundMark">#f3b1be</color> <!--日历下的点-->
     <color name="backgroundNotice">#ff0000</color> <!--通知数的背景色-->
 
-    <color name="timebarBackground">#f3b1be</color> <!--背景色-->
-    <color name="timebarSpliteNormal">#f3b1be</color> <!--刻度-->
-    <color name="timebarSpliteCenterHorizontal">#f3b1be</color> <!--中线-->
+    <color name="timebarBackground">#a55ebe</color> <!--背景色-->
+    <color name="timebarSpliteNormal">#b1f3d6</color> <!--刻度-->
+    <color name="timebarSpliteCenterHorizontal">#00e1f3</color> <!--中线-->
 
     <color name="themeStart">#10a1c7</color> <!--导航栏 渐变色按钮-->
     <color name="themeEnd">#2fd189</color> <!--导航栏 渐变色按钮-->
-    <color name="themeItemStart">#f3b1be</color> <!--选中项背景色-->
+    <color name="themeItemStart">#2fb1be</color> <!--选中项背景色-->
     <color name="themeItemEnd">#f3b1be</color> <!--选中项背景色-->
     <color name="themeSwitch">#f3b1be</color> <!--Switch按钮颜色-->
     <color name="themeProgressBar">#f3b1be</color> <!--本地回放进度条-->

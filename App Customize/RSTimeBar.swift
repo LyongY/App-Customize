@@ -57,7 +57,7 @@ struct RSTimeBar: View {
                 .stroke(Color(self.colors.timebar.spliteCenterH))
                 
                 VStack {
-                    Spacer(minLength: (frame.size.height - 60) * 0.6)
+                    Spacer(minLength: (frame.size.height - 60) * 0.1)
                     HStack(spacing: 0) {
                         ForEach(0 ..< 6) { index in
                             Text(self.timeString(index: index))
@@ -68,6 +68,7 @@ struct RSTimeBar: View {
                     Spacer(minLength: (frame.size.height - 60) * 0.4)
                 }
             }
+            .background(Color(self.colors.timebar.background))
         }
     }
 }

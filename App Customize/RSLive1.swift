@@ -23,13 +23,14 @@ struct RSLive1: View {
                         Rectangle()
                             .fill(Color(self.userData.colors.background.list))
                             .frame(maxWidth: .infinity, maxHeight: 35)
-                            .clipShape(RoundedRectangle(cornerRadius: 8))
+                            .clipShape(RoundedRectangle(cornerRadius: 5))
                         Text("Demo 1 - Channel 01")
                             .foregroundColor(Color(self.userData.colors.text.text))
                     }
                     Image("RemotePlayback")
                 }
-                .padding()
+                .padding([.trailing, .leading], nil)
+                .padding([.top, .bottom], 1)
                 .background(Color(self.userData.colors.background.toolbar))
                 
                 RSDeviceList()

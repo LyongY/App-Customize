@@ -13,6 +13,10 @@
 		1937316D23CD8A2C00994791 /* RSLive2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1937316C23CD8A2C00994791 /* RSLive2.swift */; };
 		1937316F23CD8E5D00994791 /* RSLive3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1937316E23CD8E5D00994791 /* RSLive3.swift */; };
 		1937317D23CDBC1700994791 /* RSPlayback1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1937317C23CDBC1700994791 /* RSPlayback1.swift */; };
+		19AFA7E723CEC15B00745193 /* RSPlayback2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AFA7E623CEC15B00745193 /* RSPlayback2.swift */; };
+		19AFA7E923CEDE5800745193 /* RSFile1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AFA7E823CEDE5800745193 /* RSFile1.swift */; };
+		19AFA7EB23CEDE6700745193 /* RSFile2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AFA7EA23CEDE6700745193 /* RSFile2.swift */; };
+		19AFA7ED23CF0A4B00745193 /* RSPush1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AFA7EC23CF0A4B00745193 /* RSPush1.swift */; };
 		19DE30DD23C81E9400EAE98B /* RSToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DE30DC23C81E9400EAE98B /* RSToolBar.swift */; };
 		19DE30E123C8649200EAE98B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19DE30E023C8649200EAE98B /* CoreGraphics.framework */; };
 		19FE6E0223C40CB100608B49 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19FE6E0123C40CB100608B49 /* Preview Assets.xcassets */; };
@@ -50,6 +54,10 @@
 		1937316C23CD8A2C00994791 /* RSLive2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSLive2.swift; sourceTree = "<group>"; };
 		1937316E23CD8E5D00994791 /* RSLive3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSLive3.swift; sourceTree = "<group>"; };
 		1937317C23CDBC1700994791 /* RSPlayback1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSPlayback1.swift; sourceTree = "<group>"; };
+		19AFA7E623CEC15B00745193 /* RSPlayback2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSPlayback2.swift; sourceTree = "<group>"; };
+		19AFA7E823CEDE5800745193 /* RSFile1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSFile1.swift; sourceTree = "<group>"; };
+		19AFA7EA23CEDE6700745193 /* RSFile2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSFile2.swift; sourceTree = "<group>"; };
+		19AFA7EC23CF0A4B00745193 /* RSPush1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSPush1.swift; sourceTree = "<group>"; };
 		19DE30DC23C81E9400EAE98B /* RSToolBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSToolBar.swift; sourceTree = "<group>"; };
 		19DE30E023C8649200EAE98B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		19FE6DF523C40CB000608B49 /* App Customize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "App Customize.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -188,6 +196,10 @@
 				1937316C23CD8A2C00994791 /* RSLive2.swift */,
 				1937316E23CD8E5D00994791 /* RSLive3.swift */,
 				1937317C23CDBC1700994791 /* RSPlayback1.swift */,
+				19AFA7E623CEC15B00745193 /* RSPlayback2.swift */,
+				19AFA7E823CEDE5800745193 /* RSFile1.swift */,
+				19AFA7EA23CEDE6700745193 /* RSFile2.swift */,
+				19AFA7EC23CF0A4B00745193 /* RSPush1.swift */,
 			);
 			name = "总览";
 			sourceTree = "<group>";
@@ -337,6 +349,7 @@
 				19DE30DD23C81E9400EAE98B /* RSToolBar.swift in Sources */,
 				19FE6E5E23C40DE200608B49 /* RSColorNameMap.swift in Sources */,
 				19FE6E1323C40D1B00608B49 /* ContentView.swift in Sources */,
+				19AFA7E923CEDE5800745193 /* RSFile1.swift in Sources */,
 				19FE6E5323C40D6700608B49 /* RSTimeBar.swift in Sources */,
 				19FE6E1623C40D1B00608B49 /* RSCustomColor.swift in Sources */,
 				19FE6E1523C40D1B00608B49 /* UserData.swift in Sources */,
@@ -347,11 +360,14 @@
 				1937317D23CDBC1700994791 /* RSPlayback1.swift in Sources */,
 				191951C323C5B180001380DC /* RSColectionView.swift in Sources */,
 				19FE6E6523C40DEC00608B49 /* RSColorSlider.swift in Sources */,
+				19AFA7E723CEC15B00745193 /* RSPlayback2.swift in Sources */,
+				19AFA7ED23CF0A4B00745193 /* RSPush1.swift in Sources */,
 				19FE6E6723C40DEC00608B49 /* RSColorView.swift in Sources */,
 				19FE6E1423C40D1B00608B49 /* SceneDelegate.swift in Sources */,
 				19FE6E6623C40DEC00608B49 /* RSColorModel.swift in Sources */,
 				1937316F23CD8E5D00994791 /* RSLive3.swift in Sources */,
 				19FE6E5123C40D6700608B49 /* RSDeviceList.swift in Sources */,
+				19AFA7EB23CEDE6700745193 /* RSFile2.swift in Sources */,
 				1937316D23CD8A2C00994791 /* RSLive2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -480,8 +496,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"App Customize/Preview Content\"";
+				DEVELOPMENT_TEAM = AC376MY52H;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "App Customize/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -500,8 +518,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"App Customize/Preview Content\"";
+				DEVELOPMENT_TEAM = AC376MY52H;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "App Customize/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

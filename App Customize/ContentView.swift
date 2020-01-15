@@ -41,6 +41,10 @@ struct ContentView: View {
                 AnyView(RSLive2()),
                 AnyView(RSLive3()),
                 AnyView(RSPlayback1()),
+                AnyView(RSPlayback2()),
+                AnyView(RSFile1()),
+                AnyView(RSFile2()),
+                AnyView(RSPush1()),
             ]).environmentObject(UserData.default)
                 .background(Color(.lightGray))
                 .edgesIgnoringSafeArea([.bottom])
