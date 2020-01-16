@@ -17,9 +17,9 @@ struct RSPush1: View {
     }
 
     
-    enum NotiFicationType {
-        case motion
-        case io
+    enum NotiFicationType: String {
+        case motion = "Motion"
+        case io = "IO Alarm"
     }
     
     func notification(type: NotiFicationType, checked: Bool, device: String, channel: String, time: String) -> some View {
@@ -27,7 +27,7 @@ struct RSPush1: View {
             HStack {
                 VStack(alignment: .leading) {
                     Group {
-                        Text("f")
+                        Text(type.rawValue).font(.custom("Bold", size: 20)).padding(.top, nil)
                         Text("\(device) - \(channel)")
                         Text(time)
                     }
@@ -37,6 +37,10 @@ struct RSPush1: View {
                 Spacer()
             }
             .padding(.leading, nil)
+            
+            Rectangle()
+                .fill(Color(colors.splite.normal))
+                .frame(height: 1)
         }
     }
     
@@ -47,12 +51,14 @@ struct RSPush1: View {
             notification(type: .io, checked: false, device: "Device1", channel: "Channel01", time: "2020-01-15 00:00:00")
             notification(type: .io, checked: true, device: "Device1", channel: "Channel01", time: "2020-01-15 00:00:00")
             notification(type: .motion, checked: false, device: "Device1", channel: "Channel01", time: "2020-01-15 00:00:00")
-            
+            notification(type: .io, checked: false, device: "Device1", channel: "Channel01", time: "2020-01-15 00:00:00")
+
             Spacer()
             
             RSToolBar(data: ["ClearAll", "AllChecked"], paddingImageBottom: true)
-            .background(Color(colors.background.toolbar))
+                .background(Color(colors.background.toolbar))
         }
+        .background(Color(colors.background.list))
     }
 }
 
