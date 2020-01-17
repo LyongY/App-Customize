@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		191951C123C56E26001380DC /* RSLive1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191951C023C56E26001380DC /* RSLive1.swift */; };
+		191951C123C56E26001380DC /* RSLive2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191951C023C56E26001380DC /* RSLive2.swift */; };
 		191951C323C5B180001380DC /* RSColectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191951C223C5B180001380DC /* RSColectionView.swift */; };
 		1937316923CD5E4800994791 /* colors.xml in Resources */ = {isa = PBXBuildFile; fileRef = 1937316823CD5E4800994791 /* colors.xml */; };
-		1937316D23CD8A2C00994791 /* RSLive2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1937316C23CD8A2C00994791 /* RSLive2.swift */; };
+		1937316D23CD8A2C00994791 /* RSLive1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1937316C23CD8A2C00994791 /* RSLive1.swift */; };
 		1937316F23CD8E5D00994791 /* RSLive3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1937316E23CD8E5D00994791 /* RSLive3.swift */; };
 		1937317D23CDBC1700994791 /* RSPlayback1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1937317C23CDBC1700994791 /* RSPlayback1.swift */; };
 		19AFA7E723CEC15B00745193 /* RSPlayback2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AFA7E623CEC15B00745193 /* RSPlayback2.swift */; };
@@ -48,10 +48,10 @@
 
 /* Begin PBXFileReference section */
 		0E721B1233D42F8A3300521A /* Pods_App_Customize.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_App_Customize.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		191951C023C56E26001380DC /* RSLive1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSLive1.swift; sourceTree = "<group>"; };
+		191951C023C56E26001380DC /* RSLive2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSLive2.swift; sourceTree = "<group>"; };
 		191951C223C5B180001380DC /* RSColectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSColectionView.swift; sourceTree = "<group>"; };
 		1937316823CD5E4800994791 /* colors.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = colors.xml; sourceTree = "<group>"; };
-		1937316C23CD8A2C00994791 /* RSLive2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSLive2.swift; sourceTree = "<group>"; };
+		1937316C23CD8A2C00994791 /* RSLive1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSLive1.swift; sourceTree = "<group>"; };
 		1937316E23CD8E5D00994791 /* RSLive3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSLive3.swift; sourceTree = "<group>"; };
 		1937317C23CDBC1700994791 /* RSPlayback1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSPlayback1.swift; sourceTree = "<group>"; };
 		19AFA7E623CEC15B00745193 /* RSPlayback2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSPlayback2.swift; sourceTree = "<group>"; };
@@ -155,9 +155,9 @@
 			isa = PBXGroup;
 			children = (
 				19FE6E5823C40DE200608B49 /* RSColorCategoryView.swift */,
+				19FE6E5923C40DE200608B49 /* RSColorTypeView.swift */,
 				19FE6E5B23C40DE200608B49 /* RSColorDetailView.swift */,
 				19FE6E5A23C40DE200608B49 /* RSColorNameMap.swift */,
-				19FE6E5923C40DE200608B49 /* RSColorTypeView.swift */,
 				19FE6E7423C426CC00608B49 /* RSScrollView.swift */,
 			);
 			name = "选择及修改颜色";
@@ -192,8 +192,8 @@
 		19FE6E7323C41D2200608B49 /* 总览 */ = {
 			isa = PBXGroup;
 			children = (
-				191951C023C56E26001380DC /* RSLive1.swift */,
-				1937316C23CD8A2C00994791 /* RSLive2.swift */,
+				1937316C23CD8A2C00994791 /* RSLive1.swift */,
+				191951C023C56E26001380DC /* RSLive2.swift */,
 				1937316E23CD8E5D00994791 /* RSLive3.swift */,
 				1937317C23CDBC1700994791 /* RSPlayback1.swift */,
 				19AFA7E623CEC15B00745193 /* RSPlayback2.swift */,
@@ -344,7 +344,7 @@
 				19FE6E5C23C40DE200608B49 /* RSColorCategoryView.swift in Sources */,
 				19FE6E6D23C4102E00608B49 /* RSFileItem.swift in Sources */,
 				19FE6E5223C40D6700608B49 /* RSPlayView.swift in Sources */,
-				191951C123C56E26001380DC /* RSLive1.swift in Sources */,
+				191951C123C56E26001380DC /* RSLive2.swift in Sources */,
 				19FE6E5023C40D6700608B49 /* RSMenu.swift in Sources */,
 				19DE30DD23C81E9400EAE98B /* RSToolBar.swift in Sources */,
 				19FE6E5E23C40DE200608B49 /* RSColorNameMap.swift in Sources */,
@@ -368,7 +368,7 @@
 				1937316F23CD8E5D00994791 /* RSLive3.swift in Sources */,
 				19FE6E5123C40D6700608B49 /* RSDeviceList.swift in Sources */,
 				19AFA7EB23CEDE6700745193 /* RSFile2.swift in Sources */,
-				1937316D23CD8A2C00994791 /* RSLive2.swift in Sources */,
+				1937316D23CD8A2C00994791 /* RSLive1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

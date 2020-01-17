@@ -10,12 +10,21 @@ import SwiftUI
 
 struct RSColorTypeView: View {
     
+    @EnvironmentObject var userData: UserData
+    
     var data: (category: String, data: Array<String>)
     var body: some View {
         List {
             ForEach(data.data, id: \.self) { (key) in
                 NavigationLink(destination: RSColorDetailView(key: key)) {
-                    Text(rs_color_map[key] ?? key)
+                    HStack {
+                        Text(rs_color_map[key] ?? key)
+                        Spacer()
+                        Rectangle()
+                            .fill(Color(self.userData.colors[key]))
+                            .frame(width: 30, height: 30)
+                            .shadow(radius: 5)
+                    }
                 }
             }
         }
@@ -25,6 +34,6 @@ struct RSColorTypeView: View {
 
 struct RSColorTypeView_Previews: PreviewProvider {
     static var previews: some View {
-        RSColorTypeView(data: (category: "textDetail", data: ["123", "456", "789"]))
+        RSColorTypeView(data: (category: "textDetail", data: ["textColor", "backgroundBasic", "spliteSelected"])).environmentObject(UserData.default)
     }
 }

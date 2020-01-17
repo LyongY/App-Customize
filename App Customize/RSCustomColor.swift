@@ -15,6 +15,10 @@ struct RSCustomColor {
     var timebar = Timebar()
     var theme = Theme()
     var splite = Splite()
+    
+    subscript(_ colorKey: String) -> UIColor {
+        return allColor[colorKey]!
+    }
 }
 
 extension RSCustomColor {
