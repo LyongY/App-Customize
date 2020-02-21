@@ -13,6 +13,14 @@
 		1937316D23CD8A2C00994791 /* RSLive1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1937316C23CD8A2C00994791 /* RSLive1.swift */; };
 		1937316F23CD8E5D00994791 /* RSLive3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1937316E23CD8E5D00994791 /* RSLive3.swift */; };
 		1937317D23CDBC1700994791 /* RSPlayback1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1937317C23CDBC1700994791 /* RSPlayback1.swift */; };
+		1938CA6023F648A300043371 /* RSDetail_Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1938CA5F23F648A300043371 /* RSDetail_Table.swift */; };
+		1938CA6223F648DD00043371 /* RSDetail_Timebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1938CA6123F648DD00043371 /* RSDetail_Timebar.swift */; };
+		1938CA6423F6491C00043371 /* RSDetail_LiveAndPop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1938CA6323F6491C00043371 /* RSDetail_LiveAndPop.swift */; };
+		1938CA6623F64F3300043371 /* RSDetail_PlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1938CA6523F64F3300043371 /* RSDetail_PlayView.swift */; };
+		1938CA6823F64F5700043371 /* RSDetail_Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1938CA6723F64F5700043371 /* RSDetail_Calendar.swift */; };
+		1938CA6A23F64FAB00043371 /* RSDetail_File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1938CA6923F64FAB00043371 /* RSDetail_File.swift */; };
+		1938CA6C23F64FBD00043371 /* RSDetail_DeviceList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1938CA6B23F64FBD00043371 /* RSDetail_DeviceList.swift */; };
+		1938CA6E23F64FDF00043371 /* RSDetail_ScanQRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1938CA6D23F64FDF00043371 /* RSDetail_ScanQRCode.swift */; };
 		19AFA7E723CEC15B00745193 /* RSPlayback2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AFA7E623CEC15B00745193 /* RSPlayback2.swift */; };
 		19AFA7E923CEDE5800745193 /* RSFile1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AFA7E823CEDE5800745193 /* RSFile1.swift */; };
 		19AFA7EB23CEDE6700745193 /* RSFile2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AFA7EA23CEDE6700745193 /* RSFile2.swift */; };
@@ -54,6 +62,14 @@
 		1937316C23CD8A2C00994791 /* RSLive1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSLive1.swift; sourceTree = "<group>"; };
 		1937316E23CD8E5D00994791 /* RSLive3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSLive3.swift; sourceTree = "<group>"; };
 		1937317C23CDBC1700994791 /* RSPlayback1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSPlayback1.swift; sourceTree = "<group>"; };
+		1938CA5F23F648A300043371 /* RSDetail_Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSDetail_Table.swift; sourceTree = "<group>"; };
+		1938CA6123F648DD00043371 /* RSDetail_Timebar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSDetail_Timebar.swift; sourceTree = "<group>"; };
+		1938CA6323F6491C00043371 /* RSDetail_LiveAndPop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSDetail_LiveAndPop.swift; sourceTree = "<group>"; };
+		1938CA6523F64F3300043371 /* RSDetail_PlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSDetail_PlayView.swift; sourceTree = "<group>"; };
+		1938CA6723F64F5700043371 /* RSDetail_Calendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSDetail_Calendar.swift; sourceTree = "<group>"; };
+		1938CA6923F64FAB00043371 /* RSDetail_File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSDetail_File.swift; sourceTree = "<group>"; };
+		1938CA6B23F64FBD00043371 /* RSDetail_DeviceList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSDetail_DeviceList.swift; sourceTree = "<group>"; };
+		1938CA6D23F64FDF00043371 /* RSDetail_ScanQRCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSDetail_ScanQRCode.swift; sourceTree = "<group>"; };
 		19AFA7E623CEC15B00745193 /* RSPlayback2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSPlayback2.swift; sourceTree = "<group>"; };
 		19AFA7E823CEDE5800745193 /* RSFile1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSFile1.swift; sourceTree = "<group>"; };
 		19AFA7EA23CEDE6700745193 /* RSFile2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSFile2.swift; sourceTree = "<group>"; };
@@ -131,6 +147,14 @@
 				19FE6E0F23C40D1B00608B49 /* SceneDelegate.swift */,
 				19FE6E1123C40D1B00608B49 /* RSCustomColor.swift */,
 				19FE6E1023C40D1B00608B49 /* UserData.swift */,
+				1938CA5F23F648A300043371 /* RSDetail_Table.swift */,
+				1938CA6123F648DD00043371 /* RSDetail_Timebar.swift */,
+				1938CA6323F6491C00043371 /* RSDetail_LiveAndPop.swift */,
+				1938CA6523F64F3300043371 /* RSDetail_PlayView.swift */,
+				1938CA6723F64F5700043371 /* RSDetail_Calendar.swift */,
+				1938CA6923F64FAB00043371 /* RSDetail_File.swift */,
+				1938CA6B23F64FBD00043371 /* RSDetail_DeviceList.swift */,
+				1938CA6D23F64FDF00043371 /* RSDetail_ScanQRCode.swift */,
 				19FE6E5623C40D9700608B49 /* 小模块 */,
 				19FE6E5523C40D8D00608B49 /* 选择及修改颜色 */,
 				19FE6E5723C40DB300608B49 /* 配色 */,
@@ -339,11 +363,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1938CA6E23F64FDF00043371 /* RSDetail_ScanQRCode.swift in Sources */,
+				1938CA6823F64F5700043371 /* RSDetail_Calendar.swift in Sources */,
+				1938CA6A23F64FAB00043371 /* RSDetail_File.swift in Sources */,
 				19FE6E7523C426CD00608B49 /* RSScrollView.swift in Sources */,
 				19FE6E1723C40D1B00608B49 /* AppDelegate.swift in Sources */,
 				19FE6E5C23C40DE200608B49 /* RSColorCategoryView.swift in Sources */,
 				19FE6E6D23C4102E00608B49 /* RSFileItem.swift in Sources */,
 				19FE6E5223C40D6700608B49 /* RSPlayView.swift in Sources */,
+				1938CA6423F6491C00043371 /* RSDetail_LiveAndPop.swift in Sources */,
 				191951C123C56E26001380DC /* RSLive2.swift in Sources */,
 				19FE6E5023C40D6700608B49 /* RSMenu.swift in Sources */,
 				19DE30DD23C81E9400EAE98B /* RSToolBar.swift in Sources */,
@@ -351,16 +379,20 @@
 				19FE6E1323C40D1B00608B49 /* ContentView.swift in Sources */,
 				19AFA7E923CEDE5800745193 /* RSFile1.swift in Sources */,
 				19FE6E5323C40D6700608B49 /* RSTimeBar.swift in Sources */,
+				1938CA6223F648DD00043371 /* RSDetail_Timebar.swift in Sources */,
+				1938CA6623F64F3300043371 /* RSDetail_PlayView.swift in Sources */,
 				19FE6E1623C40D1B00608B49 /* RSCustomColor.swift in Sources */,
 				19FE6E1523C40D1B00608B49 /* UserData.swift in Sources */,
 				19FE6E5F23C40DE200608B49 /* RSColorDetailView.swift in Sources */,
 				19FE6E4F23C40D6700608B49 /* RSCalendar.swift in Sources */,
 				19FE6E5D23C40DE200608B49 /* RSColorTypeView.swift in Sources */,
+				1938CA6C23F64FBD00043371 /* RSDetail_DeviceList.swift in Sources */,
 				19FE6E6423C40DEC00608B49 /* RSColorValueView.swift in Sources */,
 				1937317D23CDBC1700994791 /* RSPlayback1.swift in Sources */,
 				191951C323C5B180001380DC /* RSColectionView.swift in Sources */,
 				19FE6E6523C40DEC00608B49 /* RSColorSlider.swift in Sources */,
 				19AFA7E723CEC15B00745193 /* RSPlayback2.swift in Sources */,
+				1938CA6023F648A300043371 /* RSDetail_Table.swift in Sources */,
 				19AFA7ED23CF0A4B00745193 /* RSPush1.swift in Sources */,
 				19FE6E6723C40DEC00608B49 /* RSColorView.swift in Sources */,
 				19FE6E1423C40D1B00608B49 /* SceneDelegate.swift in Sources */,

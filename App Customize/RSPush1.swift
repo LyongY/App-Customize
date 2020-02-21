@@ -31,7 +31,7 @@ struct RSPush1: View {
                         Text("\(device) - \(channel)")
                         Text(time)
                     }
-                    .foregroundColor(Color(checked ? colors.text.text : colors.text.notice))
+                    .foregroundColor(Color(checked ? UserData.default.colors.text.text : UserData.default.colors.text.notice))
                 }
                 
                 Spacer()
@@ -39,9 +39,9 @@ struct RSPush1: View {
             .padding(.leading, nil)
             
             Rectangle()
-                .fill(Color(colors.splite.normal))
+                .fill(Color(UserData.default.colors.splite.normal))
                 .frame(height: 1)
-        }
+        }.background(Color(UserData.default.colors.background.list))
     }
     
     var body: some View {
